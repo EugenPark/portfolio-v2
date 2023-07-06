@@ -45,16 +45,21 @@
 
 			<div class="category">
 				<h3 class="heading">Languages</h3>
+				<Logo stars={5} white src="/germany.png" alt="German Flag" description="Native Language" />
+				<Logo stars={5} src="/lithuania.png" alt="Lithuanian Flag" description="Native Language" />
 				<Logo
-					stars={5}
-					white
-					src="/deutschland.png"
-					alt="Deutsche Flagge"
-					description="Native Language"
+					stars={4}
+					src="/united-kingdom.png"
+					alt="British Flag"
+					description="Business Fluent"
 				/>
-				<Logo stars={5} src="/litauen.jpeg" alt="Litauische Flagge" description="Native Language" />
-				<Logo stars={4} src="/britisch.png" alt="Britische Flagge" description="Business Fluent" />
-				<Logo stars={2} src="/korea.png" alt="Koreanische Flagge" description="Good Knowledge" />
+				<Logo
+					stars={2}
+					src="/south-korea.png"
+					alt="South Korean Flag"
+					description="Good Knowledge"
+				/>
+				<Logo stars={1} src="/france.png" alt="French Flag" description="Basic Knowledge" />
 			</div>
 		</div>
 	</div>

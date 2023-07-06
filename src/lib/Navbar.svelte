@@ -19,7 +19,6 @@
 		const div = document.getElementById(divId);
 		if (div == null) return;
 		const offset = getNavBarHeight();
-		console.log(offset);
 		if (offset == -1) return;
 		const offsetPosition = div.offsetTop - offset;
 

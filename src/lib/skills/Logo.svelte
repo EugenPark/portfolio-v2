@@ -26,11 +26,11 @@
 		width: 50%;
 		height: 5rem;
 		margin: auto;
-		border-radius: 1rem;
 	}
 	.white {
 		background-color: var(--light);
 		padding: 0.5rem 1rem;
+		border-radius: 1rem;
 	}
 	.stars {
 		color: var(--main-color);

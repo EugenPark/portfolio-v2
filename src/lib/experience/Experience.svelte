@@ -1,5 +1,6 @@
 <script>
 	import Card from '$lib/Card.svelte';
+	import Info from '$lib/Info.svelte';
 	const taod = {
 		src: '/taod.webp',
 		firstName: 'Taod',
@@ -43,6 +44,10 @@
 
 <div id="experience" class="container">
 	<h2 class="heading">Experience</h2>
+	<Info
+		phoneInfoText="Click on the cards for more detailed information"
+		desktopInfoText="Hover over the cards for more detailed information"
+	/>
 	<div class="content">
 		<Card {...akka} />
 		<Card {...megatronik} />

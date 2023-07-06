@@ -1,5 +1,13 @@
+<script>
+	import Info from '$lib/Info.svelte';
+</script>
+
 <div class="container">
 	<h2 class="heading">Certificates</h2>
+	<Info
+		phoneInfoText="Click on the logos to download the certificates"
+		desktopInfoText="Click on the logos to download the certificates"
+	/>
 	<div class="content">
 		<img
 			class="logo"

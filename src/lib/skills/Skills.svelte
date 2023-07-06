@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Saos from 'saos';
 	import Logo from './Logo.svelte';
+	import Info from '$lib/Info.svelte';
 </script>
 
-<svelte:head><title>EP - Skills</title></svelte:head>
 <Saos
 	animation={'fade-in 1s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}
 	animation_out={'fade-out 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}
@@ -12,6 +12,10 @@
 >
 	<div id="skills" class="container">
 		<h2 class="heading">Skills</h2>
+		<Info
+			phoneInfoText="Click on the stars for context"
+			desktopInfoText="Hover over the stars for context"
+		/>
 		<div class="content">
 			<div class="category">
 				<h3 class="heading">Programming</h3>
@@ -72,12 +76,10 @@
 		display: flex;
 		flex-direction: column;
 		margin: 3rem 0;
-		padding: 0 10%;
 	}
 
 	.content {
 		display: grid;
-		gap: 1rem;
 	}
 	.category {
 		display: flex;

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Info from '$lib/Info.svelte';
 	import Carousel from './Carousel.svelte';
 	import Saos from 'saos';
 </script>
@@ -12,6 +13,10 @@
 	<div id="about-me" class="container">
 		<div class="wrapper">
 			<h2 class="heading">About Me</h2>
+			<Info
+				phoneInfoText="Click on the arrows to change the Pictures"
+				desktopInfoText="Click on the pictures to bring them to the front"
+			/>
 			<div class="content">
 				<div class="carousel-wrapper">
 					<Carousel />

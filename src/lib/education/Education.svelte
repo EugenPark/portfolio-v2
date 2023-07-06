@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Info from '$lib/Info.svelte';
 	import Card from '../Card.svelte';
 	const highschool = {
 		src: '/norbert_gymnasium_knechtsteden.jpg',
@@ -44,7 +45,10 @@
 
 <div id="education" class="container">
 	<h2 class="heading">Education</h2>
-
+	<Info
+		phoneInfoText="Click on the cards for more detailed information"
+		desktopInfoText="Hover over the cards for more detailed information"
+	/>
 	<div class="content">
 		<Card {...highschool} />
 		<Card {...bachelor} />

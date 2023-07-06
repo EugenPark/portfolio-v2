@@ -14,15 +14,18 @@
 			<TypeWriter />
 			<div class="text">
 				<p>
-					Welcome to my Portfolio Page. My name is <span style="color: var(--main-color);"
-						>Eugene Park</span
-					>, and I am a <span style="color: var(--main-color);">Cloud / DevOps</span> Engineer and
-					Student. Here you will find a collection of my best
+					Welcome to my Portfolio Page. My name is
+					<span style="color: var(--main-color);">Eugene Park</span>, and I am a
+					<span style="color: var(--main-color);">Cloud / DevOps</span>
+					Engineer and Student. Here you will find a collection of my best
 					<span style="color: var(--main-color);">works</span>, showcasing my
 					<span style="color: var(--main-color);">skills</span>
 					and <span style="color: var(--main-color);">experiences</span>. It's up to you to skip to
-					specific sections or to enjoy the journey from the start. If you have any questions or
-					remarks please contact me.
+					specific sections or to enjoy the journey from the start. To navigate through the website
+					and experience the best user experience you can always click on the
+					<span style="color: var(--main-color);">info icons</span>
+					under the headings to open and close the info box. There you will find instructions for both
+					smartphone and desktop layouts. If you have any questions or remarks please contact me.
 					<span style="color: var(--main-color);"
 						>Thank you for visiting, I hope you'll enjoy the stay!</span
 					>

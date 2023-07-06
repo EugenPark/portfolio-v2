@@ -107,4 +107,7 @@
 		text-decoration: none;
 		color: var(--light);
 	}
+	.menu a:hover {
+		color: var(--main-color);
+	}
 </style>

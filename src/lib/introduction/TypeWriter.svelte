@@ -3,7 +3,7 @@
 
 	let phrases = [
 		{ phrase: 'Hello, World!', breakpoint: 7 },
-		{ phrase: 'Labas, Pasaulis!', breakpoint: 7 },
+		{ phrase: 'Labas, Pasauli!', breakpoint: 7 },
 		{ phrase: 'Hallo, Welt!', breakpoint: 7 },
 		{ phrase: '안녕하세요, 세상아!', breakpoint: 7 }
 	];

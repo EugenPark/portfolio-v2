@@ -7,6 +7,7 @@
 	import Skills from '$lib/skills/Skills.svelte';
 	import Contact from '$lib/contact/Contact.svelte';
 	import Certificates from '$lib/certificates/Certificates.svelte';
+	import Cv from '$lib/cv/CV.svelte';
 </script>
 
 <div class="wrapper">
@@ -19,6 +20,7 @@
 	<Education />
 	<Experience />
 	<Certificates />
+	<Cv />
 	<Contact />
 </div>
 

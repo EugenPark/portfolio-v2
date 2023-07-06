@@ -32,14 +32,14 @@
 		color: var(--main-color);
 	}
 	.content {
-		margin: 1rem;
+		margin: auto;
+		gap: 1rem;
 		display: flex;
 	}
 	.logo {
 		object-fit: contain;
 		height: 6rem;
 		width: 6rem;
-		margin: auto;
 		border-radius: 1rem;
 		background-color: var(--light);
 		padding: 1rem;
@@ -51,7 +51,6 @@
 	.logo-wrapper {
 		display: flex;
 		flex-direction: column;
-		margin: auto;
 		text-align: center;
 	}
 </style>

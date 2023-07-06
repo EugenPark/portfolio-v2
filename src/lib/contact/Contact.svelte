@@ -38,16 +38,25 @@
 </div>
 
 <style>
+	@media (orientation: portrait) {
+		.logos {
+			gap: 0.2rem;
+		}
+	}
+	@media (orientation: landscape) {
+		.logos {
+			gap: 2rem;
+		}
+	}
 	.container {
 		display: flex;
-		gap: 2rem;
 		flex-direction: column;
 		margin: 3rem 0;
 	}
 	.content {
 		background-color: var(--main-color);
-		padding: 2rem;
 		border-radius: 1rem;
+		padding: 2rem;
 		display: flex;
 	}
 	.heading {
@@ -58,7 +67,6 @@
 	.logos {
 		display: flex;
 		margin: auto;
-		gap: 2rem;
 	}
 	.logos a {
 		padding: 0.5rem;

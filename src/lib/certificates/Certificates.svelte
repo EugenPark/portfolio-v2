@@ -5,17 +5,19 @@
 <div class="container">
 	<h2 class="heading">Certificates</h2>
 	<Info
-		phoneInfoText="Click on the logos to download the certificates"
-		desktopInfoText="Click on the logos to download the certificates"
+		phoneInfoText="Click on the logo to download the certificate"
+		desktopInfoText="Click on the logo to download the certificate"
 	/>
 	<div class="content">
-		<img
-			class="logo"
-			style="background-color: var(--light); padding: 0.5rem;"
-			src="/toefl.png"
-			alt="toefl logo"
-		/>
-		<img class="logo" src="/terraform.webp" alt="terraform logo" />
+		<div class="logo-wrapper">
+			<img class="logo" src="/toefl.png" alt="toefl logo" />
+			<p>Toefl</p>
+		</div>
+
+		<div class="logo-wrapper">
+			<img class="logo" src="/terraform.webp" alt="terraform logo" />
+			<p>Terraform</p>
+		</div>
 	</div>
 </div>
 
@@ -39,5 +41,17 @@
 		width: 6rem;
 		margin: auto;
 		border-radius: 1rem;
+		background-color: var(--light);
+		padding: 1rem;
+	}
+	.logo:hover {
+		cursor: pointer;
+		background-color: var(--main-color);
+	}
+	.logo-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		text-align: center;
 	}
 </style>

@@ -5,9 +5,32 @@
 	function toggleMenu() {
 		open = !open;
 	}
+
+	function getNavBarHeight() {
+		const navbar = document.getElementById('navbar');
+		if (navbar != null) {
+			return navbar.offsetHeight;
+		} else {
+			return -1;
+		}
+	}
+
+	function scrollToDiv(divId: string) {
+		const div = document.getElementById(divId);
+		if (div == null) return;
+		const offset = getNavBarHeight();
+		console.log(offset);
+		if (offset == -1) return;
+		const offsetPosition = div.offsetTop - offset;
+
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: 'smooth'
+		});
+	}
 </script>
 
-<div class="container">
+<div id="navbar" class="container">
 	<div class="mobile">
 		<div class="upper-menu">
 			<div class="logo"><h2>Eugene <span style="color: var(--main-color);">Park</span></h2></div>
@@ -22,12 +45,42 @@
 
 		{#if open}
 			<div class="menu" transition:fly={{ y: -50, duration: 500 }}>
-				<a href="#skills">Skills</a>
-				<a href="#about-me">AboutMe</a>
-				<a href="#education">Education</a>
-				<a href="#experience">Experience</a>
-				<a href="#certificates">Certificates</a>
-				<a href="#contact">Contact</a>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('skills');
+					}}>Skills</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('about-me');
+					}}>AboutMe</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('education');
+					}}>Education</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('experience');
+					}}>Experience</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('certificates');
+					}}>Certificates</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
+						scrollToDiv('contact');
+					}}>Contact</a
+				>
 			</div>
 		{/if}
 	</div>
@@ -35,12 +88,12 @@
 	<div class="desktop">
 		<div class="logo"><h2>Eugene <span style="color: var(--main-color);">Park</span></h2></div>
 		<div class="menu">
-			<a href="#skills">Skills</a>
-			<a href="#about-me">About Me</a>
-			<a href="#education">Education</a>
-			<a href="#experience">Experience</a>
-			<a href="#certificates">Certificates</a>
-			<a href="#contact">Contact</a>
+			<a on:click={() => scrollToDiv('skills')}>Skills</a>
+			<a on:click={() => scrollToDiv('about-me')}>AboutMe</a>
+			<a on:click={() => scrollToDiv('education')}>Education</a>
+			<a on:click={() => scrollToDiv('experience')}>Experience</a>
+			<a on:click={() => scrollToDiv('certificates')}>Certificates</a>
+			<a on:click={() => scrollToDiv('contact')}>Contact</a>
 		</div>
 	</div>
 </div>
@@ -109,5 +162,6 @@
 	}
 	.menu a:hover {
 		color: var(--main-color);
+		cursor: pointer;
 	}
 </style>

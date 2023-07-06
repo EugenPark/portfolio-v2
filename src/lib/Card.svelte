@@ -92,7 +92,7 @@
 
 		display: grid;
 		grid-template-rows: 1fr 50% 1fr;
-		border-radius: 0 0 2rem 2rem;
+		border-radius: 2rem;
 		background: linear-gradient(
 			180deg,
 			hsla(0, 0%, 0%, 0) 0%,

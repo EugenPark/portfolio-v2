@@ -15,36 +15,42 @@
 		<div class="content">
 			<div class="category">
 				<h3 class="heading">Programming</h3>
-				<Logo stars={4} src="/python-logo.png" alt="Python Logo" />
-				<Logo stars={4} src="/java-logo.png" alt="Java Logo" />
-				<Logo stars={4} src="/javascript-logo.png" alt="JavaScript Logo" />
-				<Logo stars={4} src="/typescript-logo.png" alt="TypeScript Logo" />
-				<Logo stars={3} src="/bash-logo.png" alt="Bash Logo" />
-				<Logo stars={1} src="/cpp-logo.png" alt="C++ Logo" />
+				<Logo stars={4} src="/python-logo.png" alt="Python Logo" description="Advanced" />
+				<Logo stars={4} src="/java-logo.png" alt="Java Logo" description="Advanced" />
+				<Logo stars={4} src="/javascript-logo.png" alt="JavaScript Logo" description="Advanced" />
+				<Logo stars={4} src="/typescript-logo.png" alt="TypeScript Logo" description="Advanced" />
+				<Logo stars={3} src="/bash-logo.png" alt="Bash Logo" description="Intermediate" />
+				<Logo stars={1} src="/cpp-logo.png" alt="C++ Logo" description="Novice" />
 			</div>
 
 			<div class="category">
 				<h3 class="heading">Frameworks</h3>
-				<Logo stars={4} src="/svelte-logo.png" alt="Svelte Logo" />
-				<Logo stars={3} src="/react-logo.png" alt="React Logo" />
-				<Logo stars={3} white src="/nextjs-logo.png" alt="NextJS Logo" />
-				<Logo stars={2} src="/angular-logo.png" alt="Angular Logo" />
+				<Logo stars={4} src="/svelte-logo.png" alt="Svelte Logo" description="Advanced" />
+				<Logo stars={3} src="/react-logo.png" alt="React Logo" description="Intermediate" />
+				<Logo stars={3} white src="/nextjs-logo.png" alt="NextJS Logo" description="Intermediate" />
+				<Logo stars={2} src="/angular-logo.png" alt="Angular Logo" description="Beginner" />
 			</div>
 
 			<div class="category">
 				<h3 class="heading">Technologies</h3>
-				<Logo stars={5} src="/docker-logo.webp" alt="Docker Logo" />
-				<Logo stars={5} white src="/argocd-logo.png" alt="ArgoCD Logo" />
-				<Logo stars={4} src="/kubernetes-logo.png" alt="Kubernetes Logo" />
-				<Logo stars={3} white src="/helm-logo.png" alt="Helm Logo" />
+				<Logo stars={5} src="/docker-logo.webp" alt="Docker Logo" description="Expert" />
+				<Logo stars={5} white src="/argocd-logo.png" alt="ArgoCD Logo" description="Expert" />
+				<Logo stars={4} src="/kubernetes-logo.png" alt="Kubernetes Logo" description="Advanced" />
+				<Logo stars={3} white src="/helm-logo.png" alt="Helm Logo" description="Intermediate" />
 			</div>
 
 			<div class="category">
 				<h3 class="heading">Languages</h3>
-				<Logo stars={5} white src="/deutschland.png" alt="Deutsche Flagge" />
-				<Logo stars={4} src="/britisch.png" alt="Britische Flagge" />
-				<Logo stars={4} src="/litauen.jpeg" alt="Litauische Flagge" />
-				<Logo stars={2} src="/korea.png" alt="Koreanische Flagge" />
+				<Logo
+					stars={5}
+					white
+					src="/deutschland.png"
+					alt="Deutsche Flagge"
+					description="Native Language"
+				/>
+				<Logo stars={5} src="/litauen.jpeg" alt="Litauische Flagge" description="Native Language" />
+				<Logo stars={4} src="/britisch.png" alt="Britische Flagge" description="Business Fluent" />
+				<Logo stars={2} src="/korea.png" alt="Koreanische Flagge" description="Good Knowledge" />
 			</div>
 		</div>
 	</div>

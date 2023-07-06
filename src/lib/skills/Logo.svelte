@@ -1,17 +1,23 @@
 <script lang="ts">
+	import Tooltip from '$lib/Tooltip.svelte';
+
 	export let src: string;
 	export let alt: string;
+	export let description: string;
 	export let white: boolean = false;
 	export let stars: number;
 </script>
 
 <div class="skill">
 	<img class="logo {white ? 'white' : ''}" {src} {alt} />
-	<p class="stars">
-		{#each Array(stars) as _, i}
-			★
-		{/each}
-	</p>
+	<Tooltip>
+		<div slot="content">{description}</div>
+		<p class="stars">
+			{#each Array(stars) as _, i}
+				★
+			{/each}
+		</p>
+	</Tooltip>
 </div>
 
 <style>

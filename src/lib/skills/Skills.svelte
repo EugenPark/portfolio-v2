@@ -80,6 +80,7 @@
 
 	.content {
 		display: grid;
+		row-gap: 3rem;
 	}
 	.category {
 		display: flex;

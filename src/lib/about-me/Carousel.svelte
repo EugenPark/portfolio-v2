@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	let images = ['lithuanian_national_team_u21.jpg', 'portrait.jpg', 'vacation_in_malta.jpg'];
+	let images = ['lithuania-u21.jpeg', 'portrait.jpeg', 'vacation-picture.jpg'];
 	let leftImage = images[0];
 	let rightImage = images[2];
 	let middleImage = images[1];

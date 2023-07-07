@@ -77,6 +77,12 @@
 				<a
 					on:click={() => {
 						toggleMenu();
+						scrollToDiv('cv');
+					}}>CV</a
+				>
+				<a
+					on:click={() => {
+						toggleMenu();
 						scrollToDiv('contact');
 					}}>Contact</a
 				>
@@ -92,6 +98,12 @@
 			<a on:click={() => scrollToDiv('education')}>Education</a>
 			<a on:click={() => scrollToDiv('experience')}>Experience</a>
 			<a on:click={() => scrollToDiv('certificates')}>Certificates</a>
+			<a
+				on:click={() => {
+					toggleMenu();
+					scrollToDiv('cv');
+				}}>CV</a
+			>
 			<a on:click={() => scrollToDiv('contact')}>Contact</a>
 		</div>
 	</div>

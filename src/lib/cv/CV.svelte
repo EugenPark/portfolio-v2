@@ -2,7 +2,7 @@
 	import Info from '$lib/Info.svelte';
 </script>
 
-<div class="container">
+<div id="cv" class="container">
 	<h2 class="heading">CV</h2>
 	<Info
 		phoneInfoText="Click on the logo to download the cv"

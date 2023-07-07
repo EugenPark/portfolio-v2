@@ -60,7 +60,7 @@
 		display: flex;
 	}
 	.heading {
-		margin: auto;
+		margin: 3rem auto;
 		color: var(--main-color);
 	}
 

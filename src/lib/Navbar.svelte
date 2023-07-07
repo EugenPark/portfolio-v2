@@ -54,7 +54,7 @@
 					on:click={() => {
 						toggleMenu();
 						scrollToDiv('about-me');
-					}}>AboutMe</a
+					}}>About Me</a
 				>
 				<a
 					on:click={() => {
@@ -88,7 +88,7 @@
 		<div class="logo"><h2>Eugene <span style="color: var(--main-color);">Park</span></h2></div>
 		<div class="menu">
 			<a on:click={() => scrollToDiv('skills')}>Skills</a>
-			<a on:click={() => scrollToDiv('about-me')}>AboutMe</a>
+			<a on:click={() => scrollToDiv('about-me')}>About Me</a>
 			<a on:click={() => scrollToDiv('education')}>Education</a>
 			<a on:click={() => scrollToDiv('experience')}>Experience</a>
 			<a on:click={() => scrollToDiv('certificates')}>Certificates</a>

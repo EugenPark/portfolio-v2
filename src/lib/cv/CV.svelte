@@ -10,8 +10,10 @@
 	/>
 	<div class="content">
 		<div class="logo-wrapper">
-			<img class="logo" src="/cv.png" alt="CV Cover" />
-			<p>CV</p>
+			<a href="/cv.pdf" download>
+				<img class="logo" src="/cv.png" alt="CV Cover" />
+				<p>CV</p>
+			</a>
 		</div>
 	</div>
 </div>
@@ -47,5 +49,8 @@
 		flex-direction: column;
 		margin: auto;
 		text-align: center;
+	}
+	.logo-wrapper a {
+		color: inherit;
 	}
 </style>

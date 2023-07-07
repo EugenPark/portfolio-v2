@@ -9,7 +9,8 @@
 			Title: 'DevOps & Cloud-Platform Engineer',
 			Position: 'Working Student / Junior',
 			Timespan: 'September 2022 - May 2023',
-			Technologies: 'Python, Kubernetes, ArgoCD, Helm, Terraform'
+			Technologies: 'Python, Kubernetes, ArgoCD, Helm, Terraform',
+			Website: 'https://www.taod.de/'
 		},
 		highlightWord: 1,
 		title: 'DevOps Engineer'
@@ -22,7 +23,8 @@
 			Title: 'IoT Engineer',
 			Position: 'Working Student',
 			Timespan: 'March 2021 - Oktober 2021',
-			Technologies: 'C++, Bash, Linux'
+			Technologies: 'C++, Bash, Linux',
+			Website: 'https://www.akka-technologies.com/'
 		},
 		highlightWord: 1,
 		title: 'IoT Engineer'
@@ -35,7 +37,8 @@
 			Title: 'Software Engineer',
 			Position: 'Freelancer',
 			Timespan: 'November 2021 - July 2022',
-			Technologies: 'PHP, JavaScript, Bootstrap, Python'
+			Technologies: 'PHP, JavaScript, Bootstrap, Python',
+			Website: 'https://megatronik.org/'
 		},
 		highlightWord: 1,
 		title: 'Software Engineer'

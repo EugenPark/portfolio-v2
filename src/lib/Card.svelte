@@ -44,7 +44,14 @@
 				{#if isHovered}
 					<div class="general">
 						{#each Object.entries(info) as [category, value]}
-							<div><span style="color:var(--main-color)">{category}:</span> {value}</div>
+							{#if category == 'Website'}
+								<div>
+									<span style="color:var(--main-color)">{category}:</span>
+									<a href={value}>{value}</a>
+								</div>
+							{:else}
+								<div><span style="color:var(--main-color)">{category}:</span> {value}</div>
+							{/if}
 						{/each}
 					</div>
 				{/if}
@@ -121,5 +128,9 @@
 
 	.label h4 {
 		margin: auto;
+	}
+
+	a {
+		color: inherit;
 	}
 </style>

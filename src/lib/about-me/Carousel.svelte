@@ -76,7 +76,7 @@
 </div>
 
 <style>
-	@media (orientation: landscape) {
+	@media (orientation: landscape) and (min-width: 1001px) {
 		.carousel {
 			height: 100%;
 			max-height: 25vw;
@@ -85,7 +85,7 @@
 			display: none;
 		}
 	}
-	@media (orientation: portrait) {
+	@media (orientation: portrait) and (max-width: 499px) {
 		.carousel {
 			height: 40vh;
 		}
@@ -93,6 +93,14 @@
 			display: none;
 		}
 		.right-side {
+			display: none;
+		}
+	}
+	@media (min-width: 500px) and (max-width: 1000px) {
+		.carousel {
+			height: 100%;
+		}
+		.arrow {
 			display: none;
 		}
 	}

@@ -61,8 +61,22 @@
 </div>
 
 <style>
+	@media (orientation: landscape) and (min-width: 1001px) {
+		.card {
+			height: 50vh;
+		}
+	}
+	@media (orientation: portrait) and (max-width: 499px) {
+		.card {
+			height: 50vh;
+		}
+	}
+	@media (min-width: 500px) and (max-width: 1000px) {
+		.card {
+			height: 40vh;
+		}
+	}
 	.card {
-		height: 50vh;
 		position: relative;
 		overflow: hidden;
 	}

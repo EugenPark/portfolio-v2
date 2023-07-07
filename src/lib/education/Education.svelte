@@ -67,6 +67,7 @@
 			grid-template-columns: 1fr;
 		}
 	}
+
 	.container {
 		margin: 3rem auto;
 		display: flex;

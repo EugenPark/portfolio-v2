@@ -110,7 +110,7 @@
 </div>
 
 <style>
-	@media (orientation: landscape) {
+	@media (min-width: 1000px) {
 		.desktop {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -128,7 +128,7 @@
 			white-space: nowrap;
 		}
 	}
-	@media (orientation: portrait) {
+	@media (max-width: 999px) {
 		.desktop {
 			display: none;
 		}

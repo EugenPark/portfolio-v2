@@ -10,18 +10,38 @@
 	/>
 	<div class="content">
 		<div class="logo-wrapper">
-			<img class="logo" src="/toefl.png" alt="toefl logo" />
-			<p>Toefl</p>
+			<a href="/toefl-ibt.pdf" download="">
+				<img class="logo" src="/toefl.png" alt="toefl logo" />
+				<p>Toefl</p>
+			</a>
 		</div>
 
 		<div class="logo-wrapper">
-			<img class="logo" src="/terraform.webp" alt="terraform logo" />
-			<p>Terraform</p>
+			<a href="https://www.credly.com/badges/b5d3928a-5c8b-42c3-aa26-3e16b60a4a8d/public_url">
+				<img class="logo" src="/terraform.webp" alt="Terraform logo" />
+				<p>Terraform</p>
+			</a>
+		</div>
+		<div class="logo-wrapper">
+			<a href="/shiftspace-project-certificate.pdf" download>
+				<img class="logo" src="/shiftspace-logo.svg" alt="PDF icon" />
+				<p>Project Certificate</p>
+			</a>
 		</div>
 	</div>
 </div>
 
 <style>
+	@media (orientation: landscape) {
+		.content {
+			flex-direction: row;
+		}
+	}
+	@media (orientation: portrait) {
+		.content {
+			flex-direction: column;
+		}
+	}
 	.container {
 		margin: 3rem 0;
 		display: flex;
@@ -52,5 +72,8 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+	}
+	.logo-wrapper a {
+		color: inherit;
 	}
 </style>

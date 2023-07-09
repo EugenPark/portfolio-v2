@@ -10,8 +10,8 @@
 	/>
 	<div class="content">
 		<div class="logo-wrapper">
-			<a href="/cv.pdf" download>
-				<img class="logo" src="/cv.png" alt="CV Cover" />
+			<a href="/certificates/cv.pdf" download>
+				<img class="logo" src="/logos/cv.png" alt="CV Cover" />
 				<p>CV</p>
 			</a>
 		</div>

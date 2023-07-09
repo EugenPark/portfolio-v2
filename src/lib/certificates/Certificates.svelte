@@ -10,21 +10,21 @@
 	/>
 	<div class="content">
 		<div class="logo-wrapper">
-			<a href="/toefl-ibt.pdf" download="">
-				<img class="logo" src="/toefl.png" alt="toefl logo" />
+			<a href="/certificates/toefl-ibt.pdf" download="">
+				<img class="logo" src="/logos/toefl.png" alt="toefl logo" />
 				<p>Toefl</p>
 			</a>
 		</div>
 
 		<div class="logo-wrapper">
 			<a href="https://www.credly.com/badges/b5d3928a-5c8b-42c3-aa26-3e16b60a4a8d/public_url">
-				<img class="logo" src="/terraform.webp" alt="Terraform logo" />
+				<img class="logo" src="/logos/terraform.webp" alt="Terraform logo" />
 				<p>Terraform</p>
 			</a>
 		</div>
 		<div class="logo-wrapper">
-			<a href="/shiftspace-project-certificate.pdf" download>
-				<img class="logo" src="/shiftspace-logo.svg" alt="PDF icon" />
+			<a href="/certificates/shiftspace-project-certificate.pdf" download>
+				<img class="logo" src="/logos/shiftspace.svg" alt="PDF icon" />
 				<p>Project Certificate</p>
 			</a>
 		</div>

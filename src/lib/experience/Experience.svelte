@@ -2,7 +2,7 @@
 	import Card from '$lib/Card.svelte';
 	import Info from '$lib/Info.svelte';
 	const taod = {
-		src: '/taod.webp',
+		src: '/pictures/taod.webp',
 		firstName: 'Taod',
 		secondName: 'Consulting',
 		info: {
@@ -16,7 +16,7 @@
 		title: 'DevOps Engineer'
 	};
 	const akka = {
-		src: '/akka.png',
+		src: '/logos/akka.png',
 		firstName: 'Akka',
 		secondName: 'Technologies',
 		info: {
@@ -30,7 +30,7 @@
 		title: 'IoT Engineer'
 	};
 	const megatronik = {
-		src: '/megatronik.png',
+		src: '/logos/megatronik.png',
 		firstName: 'Megatronik',
 		secondName: '',
 		info: {

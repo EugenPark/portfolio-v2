@@ -24,7 +24,7 @@
 			isHovered = false;
 		}}
 	>
-		<img class="background" {src} alt="test" />
+		<img class="background" {src} alt={title} />
 		{#key isHovered}
 			<div
 				transition:fly={{ y: 200, duration: 1500 }}

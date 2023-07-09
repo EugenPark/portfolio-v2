@@ -1,7 +1,11 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	let images = ['lithuania-u21.jpeg', 'portrait.jpeg', 'vacation-picture.jpg'];
+	let images = [
+		'pictures/lithuania-u21.jpeg',
+		'pictures/portrait.jpeg',
+		'pictures/vacation-picture.jpg'
+	];
 	let leftImage = images[0];
 	let rightImage = images[2];
 	let middleImage = images[1];
@@ -36,7 +40,7 @@
 </script>
 
 <div class="carousel">
-	<input on:click={() => shift(-1)} type="button" class="arrow" alt="" value="&#60;" />
+	<input on:click={() => shift(-1)} type="button" class="arrow" alt="Left Arrow" value="&#60;" />
 	<div class="carousel-item left-side">
 		{#key leftImage}
 			<input
@@ -45,7 +49,7 @@
 				type="image"
 				class="portrait"
 				src={leftImage}
-				alt=""
+				alt="Portrait Picture"
 			/>
 		{/key}
 	</div>
@@ -56,7 +60,7 @@
 				type="image"
 				class="portrait"
 				src={middleImage}
-				alt=""
+				alt="Portrait Picture"
 			/>
 		{/key}
 	</div>
@@ -68,11 +72,11 @@
 				type="image"
 				class="portrait"
 				src={rightImage}
-				alt=""
+				alt="Portrait Picture"
 			/>
 		{/key}
 	</div>
-	<input on:click={() => shift(1)} type="button" class="arrow" alt="" value="&#62;" />
+	<input on:click={() => shift(1)} type="button" class="arrow" alt="Right Arrow" value="&#62;" />
 </div>
 
 <style>

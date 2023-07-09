@@ -2,7 +2,7 @@
 	import Info from '$lib/Info.svelte';
 	import Card from '../Card.svelte';
 	const highschool = {
-		src: '/norbert_gymnasium_knechtsteden.jpg',
+		src: '/pictures/ngk.jpg',
 		firstName: 'Norbert-Gymnasium',
 		secondName: 'Knechtsteden',
 		info: {
@@ -14,7 +14,7 @@
 		title: 'Middle- & Highschool'
 	};
 	const bachelor = {
-		src: '/university_of_cologne.jpg',
+		src: '/pictures/university-of-cologne.jpg',
 		firstName: 'Universität zu',
 		secondName: 'Köln',
 		info: {
@@ -29,7 +29,7 @@
 		title: 'University - Bachelor'
 	};
 	const master = {
-		src: '/kth_royal_institute_of_technology.jpeg',
+		src: '/pictures/kth.jpeg',
 		firstName: 'KTH',
 		secondName: 'Royal Institute of Technology',
 		info: {

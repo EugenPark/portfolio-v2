@@ -8,13 +8,13 @@
 		<div class="logos">
 			<a href="mailto:eugenepark2001@gmail.com">
 				<div class="logo-wrapper">
-					<img class="logo" src="/gmail.png" alt="gmail logo" />
+					<img class="logo" src="/logos/gmail.png" alt="gmail logo" />
 					<p class="label">Email</p>
 				</div>
 			</a>
 			<a href="https://www.linkedin.com/in/eugene-park-3465941b5/">
 				<div class="logo-wrapper">
-					<img class="logo" src="/linkedin.svg" alt="linkedin logo" />
+					<img class="logo" src="/logos/linkedin.svg" alt="linkedin logo" />
 					<p class="label">LinkedIn</p>
 				</div>
 			</a>
@@ -26,7 +26,7 @@
 				<div class="logo-wrapper">
 					<img
 						class="logo"
-						src="/github.png"
+						src="/logos/github.png"
 						alt="github logo"
 						style={lightBackground ? 'background-color: var(--light);' : ''}
 					/>

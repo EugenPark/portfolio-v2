@@ -21,7 +21,6 @@
 			}
 			index += 1;
 		} else {
-			console.log('try to stop the typing');
 			stopTyping();
 		}
 	}
@@ -42,21 +41,17 @@
 		}
 	}
 	function startTyping() {
-		console.log('start typing');
 		typewriter = setInterval(typeChar, typeSpeed);
 	}
 
 	function startDeleting() {
-		console.log('start deleting');
 		typewriter = setInterval(deleteChar, typeSpeed);
 	}
 	function stopTyping() {
-		console.log('stop typing');
 		clearInterval(typewriter);
 		setTimeout(startDeleting, 2000);
 	}
 	function stopDeleting() {
-		console.log('stop deleting');
 		clearInterval(typewriter);
 		setTimeout(startTyping, 500);
 	}

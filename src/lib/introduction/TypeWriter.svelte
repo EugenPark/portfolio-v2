@@ -1,21 +1,18 @@
-<script lang="ts">
+<script>
 	let phraseIndex = 0;
 
-	let phrases = [
-		{ phrase: 'Hello, World!', breakpoint: 7 },
-		{ phrase: 'Labas, Pasauli!', breakpoint: 7 },
-		{ phrase: 'Hallo, Welt!', breakpoint: 7 },
-		{ phrase: '안녕하세요, 세상아!', breakpoint: 7 }
-	];
-	let phrase = phrases[phraseIndex % phrases.length]['phrase'];
-	let breakpoint = phrases[phraseIndex % phrases.length]['breakpoint'];
+	let phrases = ['Hello, World!', 'Labas, Pasauli!', 'Hallo, Welt!', '안녕하세요, 세상아!'];
+	let phrase = phrases[phraseIndex];
+	let breakpoint = 7;
 
 	let typedHello = '';
 	let typedWorld = '';
 	let index = 0;
-	let typewriter: number; // for setInterval/clearInterval
+	let typewriter;
 
-	const typeChar = () => {
+	let typeSpeed = 100;
+
+	function typeChar() {
 		if (index < phrase.length) {
 			if (index < breakpoint) {
 				typedHello += phrase[index];
@@ -24,12 +21,12 @@
 			}
 			index += 1;
 		} else {
+			console.log('try to stop the typing');
 			stopTyping();
-			return;
 		}
-	};
+	}
 
-	const deleteChar = () => {
+	function deleteChar() {
 		if (index > 0) {
 			if (index >= breakpoint) {
 				typedWorld = typedWorld.slice(0, -1);
@@ -41,33 +38,30 @@
 			typedHello = '';
 			stopDeleting();
 			phraseIndex += 1;
-			phrase = phrases[phraseIndex % phrases.length]['phrase'];
-			breakpoint = phrases[phraseIndex % phrases.length]['breakpoint'];
-			return;
+			phrase = phrases[phraseIndex % phrases.length];
 		}
-	};
+	}
+	function startTyping() {
+		console.log('start typing');
+		typewriter = setInterval(typeChar, typeSpeed);
+	}
 
-	const typing = () => (typewriter = setInterval(typeChar, 100));
-	const deleting = () => (typewriter = setInterval(deleteChar, 100));
-
-	const stopTyping = () => {
+	function startDeleting() {
+		console.log('start deleting');
+		typewriter = setInterval(deleteChar, typeSpeed);
+	}
+	function stopTyping() {
+		console.log('stop typing');
 		clearInterval(typewriter);
-	};
-	const stopDeleting = () => {
+		setTimeout(startDeleting, 2000);
+	}
+	function stopDeleting() {
+		console.log('stop deleting');
 		clearInterval(typewriter);
-	};
+		setTimeout(startTyping, 500);
+	}
 
-	typing();
-	setTimeout(() => {
-		deleting();
-	}, 4000);
-
-	setInterval(() => {
-		typing();
-		setTimeout(() => {
-			deleting();
-		}, 4000);
-	}, 6000);
+	startTyping();
 </script>
 
 <div class="container">
